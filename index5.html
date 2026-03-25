@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio & Resume | 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; }
+        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 selection:bg-blue-100">
+
+    <nav class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
+            <a href="#" class="font-bold text-xl text-blue-600 tracking-tighter">UMA PORTFOLIO</a>
+            <div class="hidden md:flex space-x-8 font-semibold text-sm">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#about" class="hover:text-blue-600 transition">About</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+                <a href="#resume" target="_blank" class="text-blue-600 flex items-center gap-1 hover:underline">
+                    <i data-lucide="file-text" class="w-4 h-4"></i> Resume
+                </a>
+            </div>
+            <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-bold hover:bg-blue-700 transition">Contact Me</a>
+        </div>
+    </nav>
+
+    <section id="home" class="px-6 pt-20">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center text-center md:text-left">
+            <div>
+                <span class="text-blue-600 font-bold tracking-widest uppercase text-xs">Available for 2026 Projects</span>
+                <h1 class="text-5xl md:text-7xl font-black mt-4 mb-6 leading-tight">Creative <br/><span class="text-slate-400">Developer.</span></h1>
+                <p class="text-lg text-slate-500 mb-10">I build high-performance websites that stay on one page and keep users engaged.</p>
+                
+                <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                    <a href="#projects" class="px-8 py-3 bg-slate-900 text-white rounded-xl font-bold hover:shadow-lg transition">View Work</a>
+                    
+                    <a href="resume.pdf" download="My_Resume.pdf" class="px-8 py-3 border-2 border-slate-200 rounded-xl font-bold flex items-center gap-2 hover:bg-white transition">
+                        <i data-lucide="download" class="w-5 h-5 text-blue-600"></i> Download CV
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="formalphoto.pdf" alt="Profile" class="w-64 h-64 md:w-80 md:h-80 rounded-3xl object-cover shadow-2xl border-8 border-white">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-3"><i data-lucide="user" class="text-blue-600"></i> About Me</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 text-slate-600 text-lg leading-relaxed">
+                    <p class="mb-6">I am a full-stack developer based in [Your City]. I specialize in creating seamless user interfaces that work perfectly on mobile and desktop browsers like Microsoft Edge.</p>
+                    <p>I focus on clean code, fast loading times, and SEO-friendly structures to ensure the best possible user experience.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                    <h4 class="font-bold mb-4 text-blue-600">Core Tech Stack</h4>
+                    <ul class="space-y-2 text-sm font-medium">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> React & Tailwind</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> Node.js & Express</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4"></i> MongoDB & SQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="px-6 bg-slate-50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Featured Work</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-slate-500 mb-4 text-sm">A full-stack shopping experience built with React and Stripe.</p>
+                        <a href="#" class="text-blue-600 font-bold inline-flex items-center gap-2">Live Demo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+                <div class="group bg-white rounded-3xl overflow-hidden border border-slate-200 hover:shadow-2xl transition">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">AI Dashboard</h3>
+                        <p class="text-slate-500 mb-4 text-sm">Data visualization tool for tracking machine learning models.</p>
+                        <a href="#" class="text-blue-600 font-bold inline-flex items-center gap-2">Live Demo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="px-6 bg-slate-900 text-white text-center">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6">Ready to collaborate?</h2>
+            <p class="text-slate-400 mb-10 text-xl">Let's talk about your next big idea.</p>
+            <a href="umaksumaks77@gmail.com" class="text-3xl font-medium underline decoration-blue-500 underline-offset-8 hover:text-blue-400 transition">hello@example.com</a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-slate-500 text-sm bg-slate-900 border-t border-slate-800">
+        &copy; 2026 Your Name • Developed for Microsoft Edge • Deployed via Netlify
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
